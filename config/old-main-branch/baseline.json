@@ -1,0 +1,35 @@
+{
+  "settings": {
+    "logging": false
+  },
+  "services": [
+    {
+      "name": "service-1",
+      "clusters": [
+        {
+          "cluster": "<cluster name>",
+          "node": "<node name>",
+          "replicas": 1,
+          "namespace": "<namespace>"
+        }
+      ],
+      "resources": {
+        "limits": {
+          "cpu": "5000m"
+        },
+        "requests": {
+          "cpu": "5000m"
+        }
+      },
+      "processes": 1,
+      "endpoints": [
+        {
+          "name": "endpoint-1",
+          "protocol": "http",
+          "execution_mode": "sequential",
+          "network_complexity": {}
+        }
+      ]
+    }
+  ]
+}
